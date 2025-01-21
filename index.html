@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom's Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="left">
+            <nav class="left-nav">
+                <div class="home">
+                    <div class="icon1"><ion-icon name="home-outline" id="home-icon"></ion-icon></div>
+                    <div class="text1">Home</div>
+                </div>
+                <div class="search" id="search-left">
+                    <div class="icon2"><ion-icon name="search-outline" id="search-icon"></ion-icon></div>
+                    <div class="text2">Search</div>
+                </div>
+            </nav>
+            <div class="left-user">
+                <div class="favourites">#Favourites</div>
+                <div class="user-favourite"></div>
+            </div>
+            <div class="socials">
+                <div class="links">
+                    <span class="link-logo"><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></span>
+                    <span class="link-logo"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></span>
+                    <span class="link-logo"><a href="https://www.twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></span>
+                    <span class="link-logo"><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></span>
+                    <span class="link-logo"><a href="https://www.github.com/"><ion-icon name="logo-github"></ion-icon></a></span>
+                </div>
+                <div class="dev-note">Made with ❤️ @RiddhiDhara</div>
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="container">
+                <nav class="mid-nav" id="mid-nav">
+                    <div class="search-area">
+                        <form action="" class="search-mid">
+                            <div class="search-box">
+                                <div class="icon3"><ion-icon name="search-outline"></ion-icon></div>
+                                <input type="text" placeholder="What do you want to cook ?" class="recipe-input"></input>
+                            </div>
+                            <button type="submit" class="search-btn"><ion-icon name="fast-food-outline"></ion-icon></button>
+                        </form>
+                    </div>
+                </nav>
+                <div class="recent">
+                    <div class="recent-nav">
+                        <div class="recent-head"># Youtube Search</div>
+                        <div class="showall">Expand</div>
+                    </div>
+                    <div class="recent-content">
+                        <form class="youtube" action="https://www.youtube.com/results" method="get" target="_blank">
+                            <input class="youtube-search" name="search_query" type="text" placeholder="Search on Youtube..." maxlength="128" required />
+                            <input type="hidden" name="search_query" value="food recipes" />
+                            <button class="youtube-submit" type="submit"><ion-icon name="logo-youtube"></ion-icon></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="pre-text"><p>See your recipes here......</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <nav class="right-nav">
+                <div class="nav-close-btn"><ion-icon name="close" id="right-close"></ion-icon></div>
+                <div class="right-heading"></div>
+                <div class="love_share">
+                    <div class="love"><ion-icon name="heart-outline"></ion-icon></div>
+                    <div class="video"><ion-icon name="logo-youtube"></ion-icon></div>
+                </div>
+            </nav>
+            <div class="recipe-container">
+                <div class="recipe-image"></div>
+                <div class="tags-heading">Recipe Tags :</div>
+                <div class="tags"></div>
+                <div class="ingredients-measurement-heading">Ingredients & Measurements : </div>
+                <div class="ingredients-measurement"></div>
+                <div class="main-recipe-heading">Instructions : </div>
+                <div class="main-recipe"></div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- -----------------------------------scripts---------------------------------------->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
